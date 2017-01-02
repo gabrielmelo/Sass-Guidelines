@@ -32,8 +32,8 @@ O objetivo deste documento não é estabelecer uma regra para escrita do CSS. En
 
 ```
 
-### Strings (Melhorar)
-Strings devem são sempre envolvidas com aspas simples ('') em Sass
+### Strings
+Strings são sempre envolvidas com aspas simples ('') em Sass
 
 
 ```
