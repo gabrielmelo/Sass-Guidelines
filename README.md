@@ -1,4 +1,4 @@
-# Sass Guidelines
+# Sass Diretrizes
 Boas práticas para o desenvolvimento front-end.
 O objetivo deste documento não é estabelecer uma regra para escrita do CSS. Entretanto, buscamos definir diretrizes de código - uma maneira de escrever, afim de promover consistência no desenvolvimento individual e em equipe, de forma que o código se torne legível, elegante e rápida manutenção.
 
