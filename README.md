@@ -29,12 +29,10 @@ O objetivo deste documento não é estabelecer uma regra para escrita do CSS. En
 	
     padding: 0 1em;
 }
-
 ```
 
 ### Strings
-Strings são sempre envolvidas com aspas simples ('') em Sass
-
+Strings são sempre envolvidas com aspas simples (' ') em Sass
 
 ```
 // Sempre
@@ -45,7 +43,7 @@ $direction: left;
 ```
 
 ### URLs
-URLs devem ser citadas também envolvidas com aspas simples ('')
+URLs devem ser citadas também envolvidas com aspas simples (' ')
 
 ```
 // Sempre
@@ -57,9 +55,7 @@ URLs devem ser citadas também envolvidas com aspas simples ('')
 .foo {
 	background-image: url(/images/kittens.jpg);
 }
-
 ```
-
 
 ## Numbers
 Número é um tipo de dados que inclue tudo, desde número sem unidade a comprimentos, duração, frequência, ângulos e etcs.
@@ -132,4 +128,60 @@ Cálculo numérico deve sempre ser envolvido em parentes.
 }
 ```
 
-## Colors
+## Cores
+
+### Formato de cores
+
+```
+// Sempre
+.foo {
+	color: hsl(0, 100%, 50%);
+}
+
+// Sempre
+.foo {
+	color: rgb(255, 0, 0);
+}
+
+// Talvez
+.foo {
+	color: #f00;
+}
+
+// Nunca
+.foo {
+	color: #FF0000;
+}
+
+// Nunca
+.foo {
+	color: red;
+}
+```
+
+Usando HSL ou RGB, sempre adicione um espaço simples antes da vírgula.
+````
+// Sempre
+.foo {
+	color: rgba(0, 0, 0, 0.1);
+	background: hsl(300, 100%, 100%);
+}
+
+// Nunca
+.foo {
+	color: rgba(0,0,0,0.1);
+	background: hsl( 300, 100%, 100% );
+}
+```
+
+### Cores e variáveis
+
+Armazene uma variável com um nome significativo que represente a cor.
+
+```
+$sass-pink: hsl(330, 50%, 60%);
+```
+
+```
+$main-theme-color: $sass-pink;
+```
